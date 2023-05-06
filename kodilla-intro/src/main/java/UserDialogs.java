@@ -32,4 +32,17 @@ public class UserDialogs {
         int val = scanner.nextInt();
         return val;
     }
+
+    public static char getChar(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sign:");
+        System.out.println("[W] for White");
+        System.out.println("[B] for Blue");
+        System.out.println("[Y] for Yellow");
+        System.out.println("[G] for Green");
+        String chosenLetter = scanner.nextLine();
+        chosenLetter = chosenLetter.toUpperCase();
+
+        return chosenLetter.charAt(0);
+    }
 }
