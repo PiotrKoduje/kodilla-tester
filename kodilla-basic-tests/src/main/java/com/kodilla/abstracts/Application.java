@@ -1,0 +1,15 @@
+package com.kodilla.abstracts;
+
+public class Application {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.giveVoice();
+        Duck duck = new Duck();
+        duck.giveVoice();
+        Animal dog1 = new Dog();
+
+        AnimalProcessor animalProcessor = new AnimalProcessor();
+        animalProcessor.process(dog);
+        animalProcessor.process(dog1);
+    }
+}
