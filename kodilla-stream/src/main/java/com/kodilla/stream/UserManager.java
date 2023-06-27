@@ -31,7 +31,26 @@ public class UserManager {
         return usernames;
     }
 
+    public static List<User> getUsersOlderThen(int age){
+        List<User> result = UsersRepository.getUsersList()
+                .stream()
+                .filter(user -> user.getAge() > age)
+                .collect(Collectors.toList());
+        return result;
+    }
 
+    public static List<String> getUsersNamesWithLessPostsThan(int posts){
+        List<String> result = UsersRepository.getUsersList()
+                .stream()
+                .filter(user -> user.getNumberOfPost() < 100)
+                .map(UserManager::getUserName)
+                .collect(Collectors.toList());
+        return result;
+    }
+
+    List<String> getChemistsNames(){
+        return filterChemistGroupUsernames();
+    }
 
     public static String getUserName(User user){
         return user.getUserName();
