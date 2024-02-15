@@ -8,7 +8,7 @@ public class MainExtended {
 
         //Floating point numbers
         float pi = 3.1415F;
-        double bigFloat = 7e-12;
+        double bigFloat = 7e+12;
 
         //Character data
         char sign = '+';

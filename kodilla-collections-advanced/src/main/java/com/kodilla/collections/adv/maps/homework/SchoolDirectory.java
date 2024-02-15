@@ -23,12 +23,12 @@ public class SchoolDirectory {
 
         System.out.println(nr1);
 
-//        for(Map.Entry<Principal,School> one : map.entrySet()){
-//            System.out.println("-----------------------------------------------");
-//            System.out.println("Dyrektor: " + one.getKey().getFirstName() + " " + one.getKey().getLastName());
-//            System.out.println("Prowadzi szkołę: " + one.getValue().getName());
-//            System.out.println("Całkowita ilość uczniów w tej szkole to: " + one.getValue().getNumberOfAllPupils());
-//        }
-//        System.out.println("-----------------------------------------------");
+        for(Map.Entry<Principal,School> one : map.entrySet()){
+            System.out.println("-----------------------------------------------");
+            System.out.println("Dyrektor: " + one.getKey().getFirstName() + " " + one.getKey().getLastName());
+            System.out.println("Prowadzi szkołę: " + one.getValue().getName());
+            System.out.println("Całkowita ilość uczniów w tej szkole to: " + one.getValue().getNumberOfAllPupils());
+        }
+        System.out.println("-----------------------------------------------");
     }
 }

@@ -5,4 +5,5 @@ public class AnimalProcessor {
         System.out.println("Animal has " + animal.getNumberOfLegs() + " legs");
         animal.giveVoice();
     }
+
 }

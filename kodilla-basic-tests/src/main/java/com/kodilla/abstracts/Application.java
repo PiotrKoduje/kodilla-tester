@@ -3,13 +3,14 @@ package com.kodilla.abstracts;
 public class Application {
     public static void main(String[] args) {
         Dog dog = new Dog();
-        dog.giveVoice();
-        Duck duck = new Duck();
-        duck.giveVoice();
         Animal dog1 = new Dog();
+        Duck duck = new Duck();
+        Animal duck1 = new Duck();
 
         AnimalProcessor animalProcessor = new AnimalProcessor();
         animalProcessor.process(dog);
+        animalProcessor.process(duck);
         animalProcessor.process(dog1);
+        animalProcessor.process(duck1);
     }
 }

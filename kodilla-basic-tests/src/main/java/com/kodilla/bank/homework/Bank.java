@@ -1,9 +1,4 @@
 package com.kodilla.bank.homework;
-
-import com.kodilla.abstracts.homework.Baker;
-
-import java.sql.SQLOutput;
-
 public class Bank {
     private CashMachine[] cashMachines;
     private int size;
@@ -97,5 +92,19 @@ public class Bank {
 
     public int getSize(){
         return size;
+    }
+
+    public static void main(String[] args) {
+        CashMachine cm1 = new CashMachine();
+        CashMachine cm2 = new CashMachine();
+        Bank bank = new Bank();
+
+        bank.addCashMachine(cm1);
+        bank.addCashMachine(cm2);
+        cm1.makeTransaction(-100);
+        cm2.makeTransaction(-300);
+
+        System.out.println(cm1.getAveragePayIn());
+        System.out.println(bank.getAveragePayIn());
     }
 }

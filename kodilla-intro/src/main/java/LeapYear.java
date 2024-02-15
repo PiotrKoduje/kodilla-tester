@@ -8,9 +8,9 @@ public class LeapYear {
 
         String timing;
 
-        if (year<2023){
+        if (year<2024){
             timing = "był";
-        } else if (year>2023){
+        } else if (year>2024){
             timing = "będzie";
         } else {
             timing = "jest";

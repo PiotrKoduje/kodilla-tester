@@ -7,7 +7,8 @@ import com.kodilla.colloctions.interfaces.homework.Car;
 
 import java.util.Random;
 
-public class CarApplication {
+public class
+CarApplication {
     private static final Random RANDOM = new Random();
 
     public static void main(String[] args) {
