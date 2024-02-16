@@ -1,5 +1,6 @@
 package com.kodilla.stream.exception.homework;
 
+import java.io.FilterOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

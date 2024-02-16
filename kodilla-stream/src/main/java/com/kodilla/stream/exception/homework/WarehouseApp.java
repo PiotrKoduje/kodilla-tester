@@ -12,7 +12,7 @@ public class WarehouseApp{
         warehouse.addOrder(new Order("125"));
 
         try {
-            System.out.println("Wybrano zamówienie nr: " + warehouse.getOrder("422").getNumber());
+            System.out.println("Wybrano zamówienie nr: " + warehouse.getOrder("122").getNumber());
         } catch (OrderDoesntExistException e) {
             System.out.println("Takie zamówienie nie istnieje");
         }
